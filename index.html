@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Realtime Collab — Task 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #editor { width: 100%; height: 60vh; font-family: monospace; font-size: 14px; padding:10px; box-sizing: border-box; }
+    #users { margin-top: 10px; }
+    #roomInput { width: 200px; }
+    .small { font-size: 13px; color: #555; }
+    .controls { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Realtime Collaboration — Task 3</h1>
+
+  <div class="controls">
+    <label>Username: <input id="username" placeholder="Your name" /></label>
+    <label>Room: <input id="roomInput" placeholder="room1" /></label>
+    <button id="joinBtn">Join Room</button>
+    <button id="leaveBtn" disabled>Leave</button>
+  </div>
+
+  <div id="status" class="small">Not connected</div>
+
+  <textarea id="editor" placeholder="Start typing..." disabled></textarea>
+  <div id="users" class="small">Users in room: <span id="userList">-</span></div>
+
+  <!-- Socket.IO client -->
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <!-- Client logic -->
+  <script src="/static/client.js"></script>
+</body>
+</html>
