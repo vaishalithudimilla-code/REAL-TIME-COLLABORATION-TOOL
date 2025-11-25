@@ -18,3 +18,6 @@ On the frontend, a simple and user-friendly interface is created using HTML, CSS
 The tool also features the ability to track connected users within a room. When a user joins or leaves, the server updates the user list and broadcasts the updated list to all participants. This creates a sense of presence and awareness within the collaborative environment. The application is executed in a virtual environment to maintain clean dependency management and ensure consistent behavior across systems. Packages such as Flask-SocketIO, eventlet, and python-socketio are essential components that power the real-time functionality.
 
 *OUTPUT*:
+<img width="1907" height="747" alt="Image" src="https://github.com/user-attachments/assets/ca76990a-9ddc-46c3-a754-4fb2ad69bc47" />
+
+<img width="1908" height="716" alt="Image" src="https://github.com/user-attachments/assets/7172ea65-eb1b-4663-a2e3-c96aed89d8f8" />
